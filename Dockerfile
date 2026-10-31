@@ -4,7 +4,8 @@ WORKDIR /data
 
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
 
-RUN wget -O server.jar https://piston-data.mojang.com/v1/objects/4707d00eb834b4fc641ecc8bc2af3ed1c69b593b/server.jar
+# Enlace actualizado para la versión 1.20.4 de Minecraft Java
+RUN wget -O server.jar https://piston-data.mojang.com/v1/objects/0f38b598d6dd29759d54e4f20387550f757f516c/server.jar
 
 RUN echo "eula=true" > eula.txt
 
